@@ -1,0 +1,66 @@
+name: dl
+channels:
+  - pytorch
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - blas=1.0=mkl
+  - ca-certificates=2019.1.23=0
+  - certifi=2019.3.9=py36_0
+  - cffi=1.12.3=py36h7a1dbc1_0
+  - chainer=5.3.0=py36_0
+  - cudatoolkit=9.0=1
+  - cudnn=7.1.4=cuda9.0_0
+  - cupy=4.1.0=py36h137e5fc_0
+  - fastrlock=0.4=py36h6538335_0
+  - filelock=3.0.10=py_0
+  - freetype=2.9.1=ha9979f8_1
+  - icc_rt=2019.0.0=h0cc432a_1
+  - intel-openmp=2019.3=203
+  - jpeg=9b=hb83a4c4_2
+  - libpng=1.6.34=h79bbb47_0
+  - libprotobuf=3.7.1=h1a1b453_0
+  - libtiff=4.0.9=h36446d0_2
+  - mkl=2019.3=203
+  - mkl_fft=1.0.12=py36h14836fe_0
+  - mkl_random=1.0.2=py36h343c172_0
+  - ninja=1.9.0=h1ad3211_0
+  - numpy=1.16.3=py36h19fb1c0_0
+  - numpy-base=1.16.3=py36hc3f5095_0
+  - olefile=0.46=py36_0
+  - openssl=1.1.1=he774522_0
+  - pillow=5.4.1=py36hdc69c19_0
+  - pip=19.1=py36_0
+  - progressbar=2.5=py_0
+  - protobuf=3.7.1=py36h33f27b4_0
+  - pycparser=2.19=py36_0
+  - python=3.6.8=h9f7ef89_7
+  - pytorch=1.1.0=py3.6_cuda90_cudnn7_1
+  - setuptools=41.0.1=py36_0
+  - six=1.12.0=py36_0
+  - sqlite=3.26.0=hfa6e2cd_1001
+  - tk=8.6.8=hfa6e2cd_0
+  - torchvision=0.2.2=py_3
+  - vc=14.1=h21ff451_3
+  - vs2008_runtime=9.00.30729.5054=0
+  - vs2015_runtime=15.5.2=3
+  - wheel=0.33.1=py36_0
+  - wincertstore=0.2=py36h7fe50ca_0
+  - zlib=1.2.11=h2fa13f4_1004
+  - pip:
+    - boto3==1.9.143
+    - botocore==1.12.143
+    - chardet==3.0.4
+    - docutils==0.14
+    - idna==2.8
+    - jmespath==0.9.4
+    - python-dateutil==2.8.0
+    - pytorch-pretrained-bert==0.6.2
+    - regex==2019.04.14
+    - requests==2.21.0
+    - s3transfer==0.2.0
+    - tqdm==4.31.1
+    - urllib3==1.24.3
+prefix: H:\Anaconda3\envs\dl
+
