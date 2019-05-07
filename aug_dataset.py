@@ -251,7 +251,7 @@ def main():
                         help="The path of pretrained bert model.")
     parser.add_argument("--task_name",default="toxic",type=str,
                         help="The name of the task to train.")
-    parser.add_argument("--max_seq_length", default=64, type=int,
+    parser.add_argument("--max_seq_length", default=256, type=int,
                         help="The maximum total input sequence length after WordPiece tokenization. \n"
                              "Sequences longer than this will be truncated, and sequences shorter \n"
                              "than this will be padded.")
