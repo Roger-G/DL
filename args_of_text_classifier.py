@@ -23,10 +23,10 @@ def get_basic_arg_parser():
                         help='Dropout rate')
     parser.add_argument('--learning-rate', '-lr', type=float, default=1e-4,
                         help='Learning rate')
-    parser.add_argument('--dataset', '-data', default='imdb.binary',
+    parser.add_argument('--dataset', '-data', default='toxic',
                         choices=['dbpedia', 'imdb.binary', 'imdb.fine',
                                  'TREC', 'stsa.binary', 'stsa.fine',
-                                 'custrev', 'mpqa', 'rt-polarity', 'subj'],
+                                 'custrev', 'mpqa', 'rt-polarity', 'subj','toxic'],
                         help='Name of dataset.')
     parser.add_argument('--model', '-model', default='cnn',
                         choices=['cnn', 'rnn', 'bow'],

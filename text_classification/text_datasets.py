@@ -154,7 +154,7 @@ def _read_tsv(input_file, quotechar=None):
 
 def read_text_dataset(name, vocab=None, dir="datasets"):
     assert(name in ['TREC', 'stsa.binary', 'stsa.fine',
-                    'custrev', 'mpqa', 'rt-polarity', 'subj'])
+                    'custrev', 'mpqa', 'rt-polarity', 'subj','toxic'])
     train_path = os.path.join(dir, name, "train.tsv")
     eval_path = os.path.join("datasets", name, "dev.tsv")
     test_path = os.path.join("datasets", name, "test.tsv")

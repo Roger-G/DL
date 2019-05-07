@@ -96,7 +96,7 @@ class AugProcessor(DataProcessor):
 
     def get_labels(self, name):
         """add your dataset here"""
-        if name in ['stsa.binary', 'mpqa', 'rt-polarity', 'subj']:
+        if name in ['stsa.binary', 'mpqa', 'rt-polarity', 'subj','toxic']:
             return ["0", "1"]
         elif name in ['stsa.fine']:
             return ["0", "1", "2", "3", "4"]
@@ -249,7 +249,7 @@ def main():
                         help="The output dir for augmented dataset")
     parser.add_argument("--bert_model", default="bert-base-uncased", type=str,
                         help="The path of pretrained bert model.")
-    parser.add_argument("--task_name",default="subj",type=str,
+    parser.add_argument("--task_name",default="toxic",type=str,
                         help="The name of the task to train.")
     parser.add_argument("--max_seq_length", default=64, type=int,
                         help="The maximum total input sequence length after WordPiece tokenization. \n"
