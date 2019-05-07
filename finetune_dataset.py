@@ -243,9 +243,9 @@ def main():
     parser = argparse.ArgumentParser()
 
     ## Required parameters
-    parser.add_argument("--data_dir", default="datasets", type=str,
+    parser.add_argument("--data_dir", default="datasets/toxic", type=str,
                         help="The input data dir. Should contain the .tsv files (or other data files) for the task.")
-    parser.add_argument("--output_dir", default="aug_data", type=str,
+    parser.add_argument("--output_dir", default="aug_data/toxic", type=str,
                         help="The output dir for augmented dataset")
     parser.add_argument("--bert_model", default="bert-base-uncased", type=str,
                         help="The path of pretrained bert model.")
