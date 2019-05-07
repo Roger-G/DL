@@ -110,7 +110,7 @@ class AugProcessor(DataProcessor):
             if i == 0:
                 continue
             guid = "%s-%s" % (set_type, i)
-            print(line)
+            #print(line)
             text_a = line[0]
             label = line[-1]
             examples.append(
