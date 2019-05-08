@@ -58,7 +58,7 @@ def train(dir="datasets", print_log=False):
             fine_grained=args.dataset.endswith('.fine'),
             vocab=vocab)
     elif args.dataset in ['TREC', 'stsa.binary', 'stsa.fine',
-                          'custrev', 'mpqa', 'rt-polarity', 'subj']:
+                          'custrev', 'mpqa', 'rt-polarity', 'subj','toxic']:
         train, test, real_test, vocab = text_datasets.read_text_dataset(
             args.dataset, vocab=None, dir=dir)
         #train, test, vocab = text_datasets.get_other_text_dataset(
