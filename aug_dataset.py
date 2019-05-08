@@ -317,7 +317,7 @@ def run_aug(args, save_every_epoch=False):
         weights_path = os.path.join(PYTORCH_PRETRAINED_BERT_CACHE, model_name)
         model = torch.load(weights_path)
         return model
-    cbert_name = "{}/BertForMaskedLM_{}_epoch_6".format(task_name.lower(), task_name.lower())
+    cbert_name = "{}/BertForMaskedLM_{}_epoch_10".format(task_name.lower(), task_name.lower())
     model = load_model(cbert_name)
     model.cuda()
 
