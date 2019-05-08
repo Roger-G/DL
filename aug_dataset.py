@@ -287,6 +287,7 @@ def run_aug(args, save_every_epoch=False):
         "mpqa": AugProcessor,
         "rt-polarity": AugProcessor,
         "subj": AugProcessor,
+        "toxic": AugProcessor
     }
 
     task_name = args.task_name
