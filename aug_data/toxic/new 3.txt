@@ -1,0 +1,2 @@
+gcloud compute instances move  nvidia-ngc-image-1-vm \
+    --zone us-west1-b --destination-zone us-west1-a
