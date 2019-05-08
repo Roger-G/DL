@@ -149,7 +149,7 @@ def _read_tsv(input_file, quotechar=None):
         reader = csv.reader(f, delimiter="\t", quotechar=quotechar)
         lines = []
         for line in reader:
-            print(line)
+            #print(line)
             lines.append((split_text(normalize_text(line[0])), line[1]))
         return lines[1:]
 
