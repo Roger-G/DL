@@ -57,6 +57,7 @@ def make_array(tokens, vocab, add_eos=True, add_bos=True):
 
 def transform_to_array(dataset, vocab, with_label=True):
     if with_label:
+        print(dataset)
         return [(make_array(tokens, vocab), numpy.array([cls], 'i'))
                 for tokens, cls in dataset]
     else:
